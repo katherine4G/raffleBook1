@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="StackPane4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MatrixNumbersController">
+   <children>
+      <AnchorPane fx:id="AnchorPane4" prefHeight="467.0" prefWidth="355.0" style="-fx-background-color: #E6E6FA;">
+         <children>
+            <ScrollPane fx:id="ScrollPane4" layoutX="24.0" layoutY="125.0" prefHeight="298.0" prefWidth="315.0" style="-fx-background-color: #E6E6FA;">
+              <content>
+                  <GridPane fx:id="gridPane" prefHeight="315.0" prefWidth="283.0" style="-fx-background-color: #E6E6FA;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.3333740234375" minWidth="10.0" prefWidth="150.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.33331298828125" minWidth="10.0" prefWidth="146.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+              </content>
+            </ScrollPane>
+            <MenuButton fx:id="buttonsView" layoutX="284.0" mnemonicParsing="false" onAction="#buttons_Views" prefHeight="13.0" prefWidth="72.0" style="-fx-background-color: #1E90FF;" text="vista" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" text="disponibles" />
+                <MenuItem mnemonicParsing="false" text="reservados" />
+                  <MenuItem mnemonicParsing="false" text="pagados" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <Label fx:id="nameRaffle" layoutX="60.0" layoutY="41.0" prefHeight="25.0" prefWidth="132.0">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Button fx:id="btn_back" layoutX="-2.0" mnemonicParsing="false" onAction="#btnBackToCounterFoil" prefHeight="27.0" prefWidth="52.0" style="-fx-background-color: #1E90FF;" text="back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Separator layoutX="-13.0" layoutY="25.0" prefHeight="5.0" prefWidth="369.0" />
+            <Button fx:id="btn_generateWinner" layoutX="225.0" layoutY="86.0" mnemonicParsing="false" onAction="#generate_Winner" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #1E90FF;" text="Generar Ganador" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text layoutX="20.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. ganador: " wrappingWidth="79.33331298828125" />
+            <Label fx:id="lblWinnerNumber" layoutX="100.0" layoutY="73.0" prefHeight="17.0" prefWidth="52.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Text layoutX="15.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Premio:" wrappingWidth="52.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

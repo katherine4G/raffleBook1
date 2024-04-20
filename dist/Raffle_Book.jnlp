@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Raffle_Book.jnlp">
+  <information>
+    <title>Raffle_Book</title>
+    <vendor>kathe</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Raffle_Book.jar" size="31415" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="5155762" download="eager" />
+    <jar href="lib\zxing-core-2.0.jar" size="432773" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="main.Raffle_Book"  name="Raffle_Book" />
+  <update check="always"/>
+</jnlp>
